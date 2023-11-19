@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Formulir</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 4px;
+        }
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <label for="name">Nama:</label>
+        <input type="text" id="name" name="name" placeholder="Masukkan nama">
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" placeholder="Masukkan email">
+
+        <label for="message">Pesan:</label>
+        <textarea id="message" name="message" placeholder="Masukkan pesan"></textarea>
+
+        <label>Jenis Kelamin:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Laki-laki</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Perempuan</label>
+
+        <label>Hobi:</label>
+        <input type="checkbox" id="hobby1" name="hobby[]" value="reading">
+        <label for="hobby1">Membaca</label>
+        <input type="checkbox" id="hobby2" name="hobby[]" value="coding">
+        <label for="hobby2">Coding</label>
+
+        <label for="country">Negara:</label>
+        <select id="country" name="country">
+            <option value="id">Indonesia</option>
+            <option value="my">Malaysia</option>
+            <option value="sg">Singapura</option>
+        </select>
+
+        <button type="submit">Kirim</button>
+    </form>
+
+</body>
+</html>
